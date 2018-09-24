@@ -1,12 +1,13 @@
 #pragma once
 
 #include <vector>
+#include <string>
 #include "Vec3.h"
 
 class Image{
 private:
   int width, height;
-  std::vector<vec3> buffer;
+  std::vector<Vec3> buffer;
 public:
   Image(int width, int height);
   void SetPixel(int x, int y, const Vec3& color);

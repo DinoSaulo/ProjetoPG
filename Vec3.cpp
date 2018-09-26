@@ -1,15 +1,15 @@
 #include "Vec3.h"
 
 double Vec3::getX() const{
-  return x;
+  return this->x;
 }
 
 double Vec3::getY() const{
-  return y;
+  return this->y;
 }
 
 double Vec3::getZ() const{
-  return z;
+  return this->z;
 }
 
 Vec3::Vec3(double x, double y, double z) : x(x), y(y), z(z) {}

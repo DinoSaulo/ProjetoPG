@@ -23,9 +23,7 @@ Vec3 Vec3::operator*(const double rhs) const{
 }
 
 Vec3 Vec3::operator*(const Vec3 rhs) const{
-  double matrix[6] = {x, y, x, rhs.getX(), rhs.getY(), rhs.getZ()};
-  return Vec3(matrix[1]*matrix[5] - matrix[2]*matrix[4],
-  matrix[0]*matrix[0] - matrix[0]*matrix[0],
-  matrix[0]*matrix[0] - matrix[0]*matrix[0]
-);
+  return Vec3(y*rhs.getZ() - z*rhs.getY(), //a2b3 − a3b2
+              z*rhs.getX() - x*rhs.getZ(), //a3b1 − a1b3
+              x*rhs.getY() - y*rhs.getX());//a1b2 − a2b1
 }

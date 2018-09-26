@@ -1,1 +1,1 @@
-# Projeto da disciplina Precessamento gráfico / CIn-UFPE
+# Projeto da disciplina Processamento gráfico / CIn-UFPE
